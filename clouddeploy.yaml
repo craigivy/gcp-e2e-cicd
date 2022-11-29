@@ -1,4 +1,4 @@
-apiVersion: deploy.cloud.google.com/v1beta1
+apiVersion: deploy.cloud.google.com/v1
 kind: DeliveryPipeline
 metadata:
   name: hello-world-python-pipeline
@@ -16,7 +16,7 @@ serialPipeline:
    - prod
 ---
 
-apiVersion: deploy.cloud.google.com/v1beta1
+apiVersion: deploy.cloud.google.com/v1
 kind: Target
 metadata:
   name: test
@@ -26,7 +26,7 @@ gke:
   # cluster: projects/$PROJECT_ID/locations/us-central1/clusters/testcluster
 ---
 
-apiVersion: deploy.cloud.google.com/v1beta1
+apiVersion: deploy.cloud.google.com/v1
 kind: Target
 metadata:
   name: staging
@@ -36,7 +36,7 @@ gke:
   # cluster: projects/$PROJECT_ID/locations/us-central1/clusters/stagingcluster
 ---
 
-apiVersion: deploy.cloud.google.com/v1beta1
+apiVersion: deploy.cloud.google.com/v1
 kind: Target
 metadata:
   name: prod
